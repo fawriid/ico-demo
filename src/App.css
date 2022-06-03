@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+/* basics */
+*, *::after, *::before,ul{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+/* main container */
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 35px;
+    display: flex;
+    gap: 17px;
+}
+/* sidebar at left */
+.sidebar_menu{
+    width: 20%;
+    height: 100%;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar_heading{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D3D3D3;
+}
+.sidebar_heading :first-child{
+    width: 45px;
+    height: 45px;
+}
+.sidebar_heading p{
+    margin-right: auto;
+    margin-left: 13px;
+}
+.sidebar_heading :last-child{
+    width: 26px;
+    height: 8px;
+}
+/*  */
+.sidebar_content{
+    overflow: auto;
+}
+.sidebar_content::-webkit-scrollbar {
+    width: 12px;
+    cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar_content::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar_content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ccc;
+    cursor: pointer;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+}
+.sidebar_list-item{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 15px 0;
+    padding-left: 20px;
+}
+.sidebar_list-item:hover{
+    background-color: #D8D8D8;
+    cursor: pointer;
+}
+.sidebar_list-item img{
+    width: 30px;  
+  height: 30px;
+  margin-right: 10px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sidebar_footer{
+    border-top: 1px solid #D3D3D3;
+    padding: 20px;
+    display: flex;
+    align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.sidebar_footer p{
+    font-size: 16px;
+    color: #343434;
+    /* white-space: nowrap; */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar_footer a{
+    font-size: 18px;
+    color: #017EFB;
+}
+.sidebar_footer img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+/* main contents */
+.main{
+    width: 80%;
 }
