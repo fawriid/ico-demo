@@ -178,7 +178,11 @@ function App() {
                                     </tbody>
                                 </table>
                             </div>
-                            <div className="content_left-btngroups"></div>
+                            <div className="content_left-btngroups">
+                                <button>Rising Whitepaper</button>
+                                <button>Rising ROADMAP</button>
+                                <button>Back To Home Page</button>
+                            </div>
                         </div>
                     </div>
                     <div className="main_content-right"></div>
