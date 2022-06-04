@@ -28,7 +28,7 @@ import p23 from './assets/23.png'
 
 function App() {
     return (
-        <div className="container">
+        <div className="page_container">
             {/* side bar menu */}
             <div className="sidebar_menu">
                 <section className="sidebar_heading">
@@ -132,6 +132,56 @@ function App() {
                             </div>
                         </div>
                     </div>
+                </div>
+                {/* main section content */}
+                <div className="main_content">
+                    <div className="main_content-left">
+                        <div className="content_left-top"></div>
+                        <div className="content_left-bottom">
+                            <div className="content_left-table">
+                                <div className="contenct_left-information">
+                                    <div><p>ICO attendance history</p></div>
+                                    <div><p>Total ICO:388.000 RISING</p></div>
+                                </div>
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr style={{ color: "#017EFB" }}>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Time</th>
+                                            <th scope="col">Patment Method</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Rising</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">2022-5-27</td>
+                                            <td>2022-5-24</td>
+                                            <td>BNB</td>
+                                            <td>30</td>
+                                            <td>276.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2022-5-24</td>
+                                            <td>2022-5-24</td>
+                                            <td>BNB</td>
+                                            <td>10</td>
+                                            <td>92.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2022-5-20</td>
+                                            <td>2022-5-20</td>
+                                            <td>BUSD</td>
+                                            <td>800</td>
+                                            <td>20.000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className="content_left-btngroups"></div>
+                        </div>
+                    </div>
+                    <div className="main_content-right"></div>
                 </div>
             </div>
         </div>
