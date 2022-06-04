@@ -69,16 +69,33 @@ ul{
     margin: 5px 0;
     padding: 15px 0;
     padding-left: 20px;
+    position: relative;
 }
-.sidebar_list-item:hover{
+.sidebar_list-item:after{
+    content: '';
     background-color: #D8D8D8;
+    right: 50%;
+    transform: translateX(50%);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    transition: all 200ms linear;
     cursor: pointer;
+}
+
+.sidebar_list-item:hover:after{
+    width: 100%;
 }
 .sidebar_list-item img{
     width: 30px;  
-  height: 30px;
-  margin-right: 10px;
-
+    height: 30px;
+    margin-right: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+.sidebar_list-item p{
+    z-index: 2;
+    cursor: pointer;
 }
 
 .sidebar_footer{
