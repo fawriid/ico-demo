@@ -249,7 +249,7 @@ ul{
     border-radius: 0 15px 15px 15px;
     position: relative;
 }
-.contenct_left-information{
+.content_left-information{
     width: 75%;
     height: 50px;
     display: flex;
@@ -262,7 +262,7 @@ ul{
     transform: translateY(-100%);
     overflow: hidden;
 }
-.contenct_left-information div{
+.content_left-information div{
     width: 50%;
     height: 100%;
     display: flex;
@@ -271,12 +271,12 @@ ul{
     cursor: pointer;
     padding: 5px;
 }
-.contenct_left-information div:first-child{
+.content_left-information div:first-child{
     border-radius: 15px 0 0 0 ;
     background-color: #017efb;
     color: #fff;
 }
-.contenct_left-information div:last-child{
+.content_left-information div:last-child{
     border-radius: 0 15px 0 0 ;
     color: #017EFB;
 }
@@ -315,4 +315,145 @@ ul{
 /* right */
 .main_content-right{
     width: 30%;
+    height: 100%;
+    margin-left: 20px;
+}
+.ico_information{
+    position: relative;
+    margin-top: 30px;
+}
+.ico_information-information{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    font-size: 18px;
+    color: #fff;
+    background-color: #017EFB;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+}
+.ico_list{
+    border: 1px solid #017EFB;
+    padding: 0 10px;
+    border-radius: 0 15px 15px 15px;
+}
+.ico_list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 15px;
+}
+.ico_list-item span {
+    color: #017EFB;
+}
+.ico_list-item--png{
+    margin: 0 ;
+}
+.ico_list-item--png img{
+    width: 20px;
+    height: 20px;
+}
+/* wallet connection */
+.wallet_connection-status{
+    margin-top: 20px;
+    border: 1px solid #017efb;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom,#fff,#DFECFF);
+    padding: 20px;
+}
+.connection_status-alert{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.connection_status-alert img{
+    width: 40px;
+    height: 40px;
+}
+.connection_status-alert p{
+    color: #FF4B75;
+}
+.wallet_adding{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.wallet_adding div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.wallet_adding span{
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-indent: 5px;
+    color: #343434;
+}
+.wallet_adding input {
+    width: 80%;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px 5px;
+    outline: none;
+}
+.wallet_adding select{
+    width: 80%;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px 5px;
+    outline: none;
+}
+.wallet_adding option{
+    color:#343434 ;
+}
+.wallet_calculating{
+    margin-top: 20px;
+    color: #343434;
+    font-size: 15px;
+}
+.wallet_calculating span{
+    color: #00AF0C;
+}
+.wallet_item-divider{
+    width: 100%;
+    height: 1px;
+    background-color: #707070;
+    margin: 20px 0;
+}
+.wallet_amount{
+    color: #343434;
+}
+.wallet_token-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #343434;
+}
+.wallet_token-total span {
+    color: #8E8E8E;
+}
+.connect_wallet-button{
+    margin: 20px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.connect_wallet-button button{
+    outline: none;
+    border: 3px solid #017EFB;
+    color: #017EFB;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+.connect_wallet-button button:hover{
+    color: #fff;
+    background-color: #017EFB;
 }

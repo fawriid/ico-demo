@@ -18,13 +18,14 @@ import p13 from './assets/13.png'
 import p14 from './assets/14.png'
 import p15 from './assets/15.png'
 import p16 from './assets/16.png'
-// import p17 from './assets/17.png'
+import p17 from './assets/17.png'
 // import p18 from './assets/18.png'
 import p19 from './assets/19.png'
 import p20 from './assets/20.png'
 import p21 from './assets/21.png'
 import p22 from './assets/22.png'
 import p23 from './assets/23.png'
+import p24 from './assets/24.png'
 
 function App() {
     return (
@@ -139,9 +140,13 @@ function App() {
                         <div className="content_left-top"></div>
                         <div className="content_left-bottom">
                             <div className="content_left-table">
-                                <div className="contenct_left-information">
-                                    <div><p>ICO attendance history</p></div>
-                                    <div><p>Total ICO:388.000 RISING</p></div>
+                                <div className="content_left-information">
+                                    <div>
+                                        <p>ICO attendance history</p>
+                                    </div>
+                                    <div>
+                                        <p>Total ICO:388.000 RISING</p>
+                                    </div>
                                 </div>
                                 <table class="table table-borderless">
                                     <thead>
@@ -185,7 +190,75 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div className="main_content-right"></div>
+                    <div className="main_content-right">
+                        <div className="ico_information">
+                            <div className="ico_information-information">
+                                <p>ICO INFORMATION</p>
+                            </div>
+                            <ul className="ico_list">
+                                <li className="ico_list-item">
+                                    <p>RISING Price</p>
+                                    <span>0.04$</span>
+                                </li>
+                                <li className="ico_list-item">
+                                    <p>Purchase LImit</p>
+                                    <span>Min: 100 BUSD</span>
+                                </li>
+                                <li className="ico_list-item">
+                                    <p>Number of Tokens</p>
+                                    <span>1.000.000</span>
+                                </li>
+                                <li className="ico_list-item">
+                                    <p>Token Name</p>
+                                    <span>Rising</span>
+                                </li>
+                                <li className="ico_list-item ico_list-item--png">
+                                    <p>Token Symbol</p>
+                                    <span>
+                                        <img src={p21} alt="png" />
+                                    </span>
+                                </li>
+                                <li className="ico_list-item">
+                                    <p>Total Supply</p>
+                                    <span>180.000.000</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="wallet_connection-status">
+                            <div className="connection_status-alert">
+                                <img src={p17} alt="png" />
+                                <p>
+                                    Your wallet is not connected. <br/>Attach your wallet first.
+                                </p>
+                            </div>
+                            <div className="wallet_adding">
+                                <div>
+                                    <span>Payment Method</span>
+                                    <select>
+                                        <option value='BNB' selected> <img src={p24} alt='png' /> BNB</option>
+                                    </select>
+                                    
+                                </div>
+                                <div>
+                                    <span>Amount</span>
+                                    <input type='text' placeholder="10 BNB" />
+                                </div>
+                            </div>
+                            <div className="wallet_calculating">
+                                (10 BNB * 313 $) / 0.04 = <span>78.250 RISING</span>
+                            </div>
+                            <div className="wallet_item-divider"></div>
+                            <div className="wallet_amount">Amount</div>
+                            <div className="wallet_item-divider"></div>
+                            <div className="wallet_token-total">
+                                <p>1 BNB =</p>
+                                <span>9.200 RISING</span>
+                            </div>
+                            <div className="connect_wallet-button">
+                                <button>Connect Wallet</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
