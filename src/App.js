@@ -137,7 +137,37 @@ function App() {
                 {/* main section content */}
                 <div className="main_content">
                     <div className="main_content-left">
-                        <div className="content_left-top"></div>
+                        <div className="content_left-top">
+                            <div className="content_top-left-information"> How to join ICO ?</div>
+                            <div className="joining_ico">
+                                <div className="joining_ico-guide">
+                                    <p>In order to inverst in the Initial Coint Offering you must:</p>
+                                    <div>
+                                        <span>connect your wallet </span>
+                                        <span>specify the amount of your order </span>
+                                        <span>Click on Approve</span>
+                                    </div>
+                                </div>
+                                <div className="joining_ico-data">
+                                    <div>
+                                        <p>Data</p>
+                                        <span>2022-06-22</span>
+                                    </div>
+                                    <div>
+                                        <p>ICO Supply</p>
+                                        <span>1.000.000 RISING</span>
+                                    </div>
+                                    <div>
+                                        <p>Remaining tokens</p>
+                                        <span>1.000.000 RISING</span>
+                                    </div>
+                                    <div>
+                                        <p>Access Type</p>
+                                        <span>Public</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div className="content_left-bottom">
                             <div className="content_left-table">
                                 <div className="content_left-information">
