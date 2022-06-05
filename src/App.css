@@ -514,6 +514,7 @@ ul{
     }
     .sidebar_list-item{
         flex-direction: column;
+        justify-content: center;
         padding: 15px 0;
     }
     .sidebar_list-item p{
