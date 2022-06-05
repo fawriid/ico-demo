@@ -445,9 +445,6 @@ ul{
     width: 40px;
     height: 40px;
 }
-.connection_status-alert p{
-    color: #FF4B75;
-}
 .wallet_adding{
     margin-top: 25px;
     display: flex;
@@ -531,7 +528,43 @@ ul{
     background-color: #017EFB;
 }
 
-
+.logged_in-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    outline: none;
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 99;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+}
+.logged_in-page a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logged_in-page img{
+    width: 30px;
+    height: 30px;
+}
+.accepted_color{
+    color: #00AF0C;
+}
+.not_accepted-color{
+    color: #FF4B75;
+}
 
 /* RESPONSIVE */
 /* 1050px */
@@ -750,6 +783,9 @@ ul{
     }
 }
 @media screen and (max-width:700px) {
+    .logged_in-page{
+        display: none;
+    }
     .page_container{
         padding: 20px;
     }
@@ -838,6 +874,9 @@ ul{
     }
 }
 @media screen and (max-width:400px) {
+    .navbar_alert-night{
+        display: flex;
+    }
     .page_container{
         padding: 10px;
     }
