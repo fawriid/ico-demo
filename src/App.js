@@ -148,40 +148,42 @@ function App() {
                                         <p>Total ICO:388.000 RISING</p>
                                     </div>
                                 </div>
-                                <table class="table table-borderless">
-                                    <thead>
-                                        <tr style={{ color: "#017EFB" }}>
-                                            <th scope="col">Date</th>
-                                            <th scope="col">Time</th>
-                                            <th scope="col">Patment Method</th>
-                                            <th scope="col">Amount</th>
-                                            <th scope="col">Rising</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td scope="row">2022-5-27</td>
-                                            <td>2022-5-24</td>
-                                            <td>BNB</td>
-                                            <td>30</td>
-                                            <td>276.000</td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">2022-5-24</td>
-                                            <td>2022-5-24</td>
-                                            <td>BNB</td>
-                                            <td>10</td>
-                                            <td>92.000</td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">2022-5-20</td>
-                                            <td>2022-5-20</td>
-                                            <td>BUSD</td>
-                                            <td>800</td>
-                                            <td>20.000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div className="need_overflow">
+                                    <table className="table">
+                                        <thead>
+                                            <tr style={{ color: "#017EFB" }}>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Patment Method</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Rising</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">2022-5-27</td>
+                                                <td>2022-5-24</td>
+                                                <td>BNB</td>
+                                                <td>30</td>
+                                                <td>276.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">2022-5-24</td>
+                                                <td>2022-5-24</td>
+                                                <td>BNB</td>
+                                                <td>10</td>
+                                                <td>92.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">2022-5-20</td>
+                                                <td>2022-5-20</td>
+                                                <td>BUSD</td>
+                                                <td>800</td>
+                                                <td>20.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                             <div className="content_left-btngroups">
                                 <button>Rising Whitepaper</button>
@@ -228,20 +230,23 @@ function App() {
                             <div className="connection_status-alert">
                                 <img src={p17} alt="png" />
                                 <p>
-                                    Your wallet is not connected. <br/>Attach your wallet first.
+                                    Your wallet is not connected. <br />
+                                    Attach your wallet first.
                                 </p>
                             </div>
                             <div className="wallet_adding">
                                 <div>
                                     <span>Payment Method</span>
                                     <select>
-                                        <option value='BNB' selected> <img src={p24} alt='png' /> BNB</option>
+                                        <option value="BNB" selected>
+                                            {" "}
+                                            <img src={p24} alt="png" /> BNB
+                                        </option>
                                     </select>
-                                    
                                 </div>
                                 <div>
                                     <span>Amount</span>
-                                    <input type='text' placeholder="10 BNB" />
+                                    <input type="text" placeholder="10 BNB" />
                                 </div>
                             </div>
                             <div className="wallet_calculating">
